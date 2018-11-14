@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/nksBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="80.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18dp"
+            android:textColor="@color/nksButtonColor"/>
+
+        <TextView
+            android:id="@+id/itemCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/itemCode"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/inventoryFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/quantity"
+            android:layout_toStartOf="@+id/quantity" />
+        <TextView
+            android:id="@+id/bindText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="13dp"
+            android:text="11111"
+            android:layout_alignBaseline="@+id/itemCode"
+            android:layout_alignBottom="@+id/itemCode"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/flagTag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/partsId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="13dp"
+            android:text="1112"
+            android:layout_below="@+id/itemName"
+            android:layout_alignLeft="@+id/bindText"
+            android:layout_alignStart="@+id/bindText" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/borderColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

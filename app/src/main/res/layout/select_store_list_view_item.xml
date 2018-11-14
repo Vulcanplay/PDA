@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/basic_pressed"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/store_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/store_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="一文段字....."
+        android:textSize="18dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/nksTextColor2"
+        android:layout_below="@+id/store_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/store_item_rigth"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/item_right"
+        android:gravity="center"
+        android:textColor="@color/nksTextColor2"
+        android:textSize="30dp"
+        android:layout_below="@+id/store_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

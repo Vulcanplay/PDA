@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text=""
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/GREEN"
+        android:id="@+id/itemCode"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text=""
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/WHITE"
+        android:layout_marginTop="50dp"
+        android:id="@+id/bindTag"
+        android:layout_alignParentTop="false" />
+    <LinearLayout
+        android:id="@+id/linearLayoutCount"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/scanTitleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/scanCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/nksTextColorGreen"/>
+        <TextView
+            android:id="@+id/scanTitleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/top_mask"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/capture"
+        android:contentDescription="@string/app_name" >
+
+        <ImageView
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/scan_line"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/left_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toLeftOf="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/right_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toRightOf="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/scan_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capture_crop_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/scan_tips"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputCode"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_below="@+id/scan_tips"
+        android:imeOptions="actionSearch"
+        android:layout_toLeftOf="@+id/right_mask"
+        android:layout_toStartOf="@+id/right_mask"/>
+
+    <TextView
+        android:id="@+id/inputTextQuantity"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="请输入数量："
+        android:gravity="center"
+        android:imeOptions="actionSearch"
+        android:visibility="gone"
+        android:textColor="@color/nksTextColor"
+        android:layout_below="@+id/scan_tips"
+        android:layout_toRightOf="@+id/left_mask"
+        android:layout_toEndOf="@+id/left_mask" />
+    <TextView
+        android:id="@+id/inputQuantityForIndex"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        android:visibility="gone"
+        android:gravity="center"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/nksTextColor"
+        android:layout_above="@+id/inputCodePower"
+        android:layout_toLeftOf="@+id/inputQuantity"
+        android:layout_toStartOf="@+id/inputQuantity" />
+    <EditText
+        android:id="@+id/inputQuantity"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:text="1"
+        android:imeOptions="actionSearch"
+        android:visibility="gone"
+        android:layout_below="@+id/scan_tips"
+        android:layout_toLeftOf="@+id/right_mask"
+        android:layout_toStartOf="@+id/right_mask" />
+
+    <Button
+        android:id="@+id/inputCodePower"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="@string/submitInputCode"
+        android:layout_below="@+id/inputCode"
+        android:layout_toLeftOf="@+id/lightPower"
+        android:layout_marginRight="40dp"
+        android:layout_toStartOf="@+id/lightPower" />
+    <Button
+        android:id="@+id/inputQuantityPower"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="@string/submitInputCode"
+        android:layout_below="@+id/scan_tips"
+        android:layout_toLeftOf="@+id/lightPower"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_toStartOf="@+id/lightPower" />
+
+    <Button
+        android:id="@+id/lightPower"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="@string/lightPower"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/inputCodePower"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

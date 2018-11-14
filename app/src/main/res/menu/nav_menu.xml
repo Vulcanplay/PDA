@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/loginOut"
+        app:showAsAction="always"
+        android:title="登出"/>
+    <item
+        android:id="@+id/checkUpdate"
+        app:showAsAction="always"
+        android:title="检查更新"/>
+
+</menu>

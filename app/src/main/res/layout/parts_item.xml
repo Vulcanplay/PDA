@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/nksBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="140.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16dp"
+            android:textColor="@color/nksButtonColor"/>
+
+        <TextView
+            android:id="@+id/itemCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111"
+            android:textColor="@color/nksTextColor1"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/itemName"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22222"
+            android:textColor="@color/nksTextColor1"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/itemCode"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/orderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/supplier"
+            android:textSize="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="33"
+            android:layout_toLeftOf="@+id/supplierVal"
+            android:layout_toStartOf="@+id/supplierVal" />
+        <TextView
+        android:id="@+id/bindNotVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/nksTextColor1"
+        android:textSize="16dp"
+        android:text="33"
+            android:layout_above="@+id/orderNo"
+            android:layout_toRightOf="@+id/bindNot"
+            android:layout_toEndOf="@+id/bindNot" />
+
+        <TextView
+            android:id="@+id/bindVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="16sp"
+            android:text="111123"
+            android:layout_alignTop="@+id/bindText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/bindNot"
+            android:layout_toEndOf="@+id/bindNot" />
+        <TextView
+            android:id="@+id/flagTag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/bindScanning"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:textColor="@color/nksButtonColor"
+            android:background="@drawable/scanning_buttons"
+            android:text="扫描"
+            android:layout_below="@+id/flagTag"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/itemCodeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/itemCode"
+            android:layout_toRightOf="@+id/itemCode"
+            android:layout_toEndOf="@+id/itemCode" />
+
+        <TextView
+            android:id="@+id/supplierVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222222"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/supplier"
+            android:layout_toRightOf="@+id/supplier"
+            android:layout_toEndOf="@+id/supplier" />
+
+        <TextView
+            android:id="@+id/bindNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="16dp"
+            android:text="33"
+            android:layout_alignBottom="@+id/supplierVal"
+            android:layout_toLeftOf="@+id/bindScanning"
+            android:layout_toStartOf="@+id/bindScanning" />
+
+        <TextView
+            android:id="@+id/bindText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="16dp"
+            android:text="22"
+            android:layout_alignBottom="@+id/orderNoVal"
+            android:layout_toLeftOf="@+id/bindVal"
+            android:layout_toStartOf="@+id/bindVal" />
+
+        <TextView
+            android:id="@+id/orderNoVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:text="33333"
+            android:layout_above="@+id/location"
+            android:layout_toRightOf="@+id/orderNo"
+            android:layout_toEndOf="@+id/orderNo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="库位："
+            android:id="@+id/location"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:layout_below="@+id/orderNo"
+            android:layout_marginTop="6.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/locationVal"
+            android:textColor="@color/nksTextColor1"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/location"
+            android:layout_toRightOf="@+id/location"
+            android:layout_toEndOf="@+id/location" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/borderColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

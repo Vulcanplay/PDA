@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nksBackground"
+    tools:context="com.icar.inventory.PartsDetailsActivity">
+
+    <TextView
+        android:id="@+id/partsDetailsInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/nksTextColor1"
+        android:gravity="center"
+        android:text="加载中........"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/parts_details_itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksButtonColor"
+        android:layout_below="@+id/partsDetailsInfo"
+        android:paddingLeft="5dp"
+        android:text=""
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/solid"
+        android:background="@color/nksSolidColor"
+        android:layout_below="@+id/parts_details_itemName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/parts_details_itemCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/solid"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_batch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_itemCode"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_priceWithTax"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_batch"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_warehouse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_priceWithTax"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_warehouse"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/parts_details_warehouseAge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_location"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_supplierType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_warehouseAge"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_supplier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_supplierType"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_productLine1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_supplier"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_productLine2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/parts_details_productLine1"
+        android:text=""
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/parts_details_productLine3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/nksTextColor1"
+        android:paddingLeft="5dp"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/parts_details_productLine2"
+        android:text=""
+        android:textSize="17sp" />
+</RelativeLayout>

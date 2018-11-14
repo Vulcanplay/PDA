@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicColor"
+    tools:context="com.icar.inventory.OptionShopActivity">
+
+    <LinearLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:queryHint="@string/store_search_hint"
+        android:background="@drawable/search_view"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/search_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/search_icon"
+            android:gravity="center"
+            android:textColor="@color/nksTextColor"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:hint="@string/store_search_hint"
+            android:textColor="@color/nksTextColor"
+            android:textColorHint="@color/nksTextColor"
+            android:background="@drawable/search_view"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/select_store_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchView"></GridView>
+
+</RelativeLayout>
